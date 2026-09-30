@@ -6,7 +6,7 @@
 .page{min-height:100dvh;background:radial-gradient(circle at 75% 48%,#0d4569 0 8%,#082c49 24%,#031d32 56%)}
 header{height:108px;display:flex;align-items:center;padding:0 clamp(24px,5vw,80px);border-bottom:1px solid #ffffff22;gap:40px}
 .brand{display:flex;align-items:center;gap:12px}.mark{width:48px;height:48px;border:2px solid #eef6fb;border-radius:50%;display:grid;place-items:center;font-size:25px;color:#8fd3f2;box-shadow:inset 0 0 0 5px #ffffff10}.logo{font-weight:800;font-size:28px;line-height:.9;letter-spacing:.5px;white-space:nowrap}.logo span{display:block;color:#6fc3ed;font-weight:400;letter-spacing:5px;margin-top:8px}
-nav{margin-left:auto;display:flex;align-items:center;gap:clamp(22px,4vw,64px)}nav a{color:#fff;text-decoration:none;font-size:18px}.platform{background:linear-gradient(135deg,#f6d98f,#eab95f);color:#14202b!important;padding:18px 42px;border-radius:999px;font-weight:700}
+nav{margin-left:auto;display:flex;align-items:center;gap:clamp(22px,4vw,64px)}nav a{color:#fff;text-decoration:none;font-size:18px;transition:opacity .2s ease,transform .2s ease}nav a:hover{opacity:.78}.platform,.cta{transition:transform .2s ease,filter .2s ease}.platform:hover,.cta:hover{transform:translateY(-2px);filter:brightness(1.04)}a:focus-visible{outline:3px solid #efc978;outline-offset:4px}.platform{background:linear-gradient(135deg,#f6d98f,#eab95f);color:#14202b!important;padding:18px 42px;border-radius:999px;font-weight:700}
 main{min-height:calc(100dvh - 108px);display:grid;grid-template-columns:47% 53%;align-items:center;padding:36px clamp(24px,5vw,80px) 42px;gap:16px}
 .kicker{font-size:16px;letter-spacing:5px;color:#d4dde5;margin:0 0 12px}
 h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(48px,5.3vw,84px);line-height:.92;margin:0;max-width:760px;font-weight:500}h1 em{font-style:normal;color:var(--gold)}
@@ -27,7 +27,7 @@ header{position:relative!important;z-index:20;display:grid!important;grid-templa
 .brand{grid-column:1}.mark{width:36px;height:36px;font-size:18px}.logo{font-size:17px}.logo span{font-size:14px;letter-spacing:4px;margin-top:6px}
 header>.platform{display:block!important;grid-column:2;grid-row:1;padding:10px 15px;font-size:12px;align-self:center}
 nav{grid-column:1/-1;margin:0;display:flex;justify-content:center;gap:30px;width:100%;padding-top:7px}nav a{font-size:13px}nav .platform{display:none}
-main{display:block;min-height:0;padding:26px 24px 24px;overflow:hidden}
+main{display:block;min-height:0;padding:26px 24px 24px;overflow:hidden}.copy{max-width:620px;margin:0 auto}.cta{min-height:52px;display:inline-flex;align-items:center;justify-content:center}
 .kicker{font-size:10px;letter-spacing:2.3px;margin-bottom:10px}
 h1{font-size:clamp(33px,9.2vw,46px);line-height:.94;max-width:100%;letter-spacing:-.4px}
 .rule{width:76px;height:4px;margin:18px 0 15px}.lead{font-size:21px;line-height:1.18;margin-bottom:15px}.desc{font-size:16px;line-height:1.4;margin-bottom:22px}
@@ -49,6 +49,6 @@ radial-gradient(circle at 50% 50%,#0e4569,#061f35 73%)}
 }
 </style></head><body><div class="page">
 <header><div class="brand"><span class="mark">◯</span><div class="logo">PREMIUM<span>LAUDOS</span></div></div><nav><a href="empresa.html">A Empresa</a><a href="equipe.html">Equipe</a><a href="contato.html">Contato</a><a class="platform" href="https://premium-laudos.onrender.com/" target="_blank" rel="noopener">Plataforma &nbsp;→</a></nav><a class="platform" style="display:none" href="https://premium-laudos.onrender.com/" target="_blank" rel="noopener">Plataforma →</a></header>
-<main><section><p class="kicker">RADIOLOGIA ODONTOLÓGICA DIGITAL</p><h1>IMAGENS<br>QUE TRANSFORMAM<br><em>DECISÕES.</em></h1><div class="rule"></div><p class="lead">Auxiliando você na tomada de decisão.</p><p class="desc">Laudos especializados para uma odontologia mais segura, precisa e previsível.</p><a class="cta" href="https://premium-laudos.onrender.com/" target="_blank" rel="noopener">ACESSAR PLATAFORMA &nbsp;→</a></section>
+<main><section class="copy"><p class="kicker">RADIOLOGIA ODONTOLÓGICA DIGITAL</p><h1>IMAGENS<br>QUE TRANSFORMAM<br><em>DECISÕES.</em></h1><div class="rule"></div><p class="lead">Auxiliando você na tomada de decisão.</p><p class="desc">Laudos especializados para uma odontologia mais segura, precisa e previsível.</p><a class="cta" href="https://premium-laudos.onrender.com/" target="_blank" rel="noopener">ACESSAR PLATAFORMA &nbsp;→</a></section>
 <section class="visual" aria-label="Composição de radiologia odontológica"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="xray x1"></div><div class="xray x2"></div><div class="xray x3"></div><div class="words"><span>DIAGNÓSTICO</span><span>PLANEJAMENTO</span><span>SEGURANÇA</span><span>QUALIDADE</span><span>RESULTADOS</span></div></section></main>
 </div></body></html>
