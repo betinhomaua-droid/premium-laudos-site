@@ -2,10 +2,10 @@
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#031d32"><title>Premium Laudos</title>
 <style>
 :root{--navy:#031d32;--blue:#082b48;--gold:#efc978;--white:#f7f8fa;--muted:#b8c5d0}
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--navy);color:var(--white);font-family:Arial,Helvetica,sans-serif}body{overflow-x:hidden}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--navy);color:var(--white);font-family:Arial,Helvetica,sans-serif}body{overflow-x:hidden}.page>footer{border-top:1px solid #ffffff1c;text-align:center;padding:16px 20px;color:#9eb0bd;font-size:12px;letter-spacing:.3px;background:#02192b}
 .page{min-height:100dvh;background:radial-gradient(circle at 75% 48%,#0d4569 0 8%,#082c49 24%,#031d32 56%)}
 header{height:108px;display:flex;align-items:center;padding:0 clamp(24px,5vw,80px);border-bottom:1px solid #ffffff22;gap:40px}
-.brand{display:flex;align-items:center;gap:12px}.mark{width:48px;height:48px;border:2px solid #eef6fb;border-radius:50%;display:grid;place-items:center;font-size:25px;color:#8fd3f2;box-shadow:inset 0 0 0 5px #ffffff10}.logo{font-weight:800;font-size:28px;line-height:.9;letter-spacing:.5px;white-space:nowrap}.logo span{display:block;color:#6fc3ed;font-weight:400;letter-spacing:5px;margin-top:8px}
+.brand{display:flex;align-items:center;gap:12px}.mark{position:relative;width:48px;height:48px;border:2px solid #eef6fb;border-radius:48% 52% 58% 42%;display:block;transform:rotate(-18deg);box-shadow:inset 0 0 0 5px #ffffff10}.mark:before,.mark:after,.mark i:before,.mark i:after{content:"";position:absolute;background:#eef6fb;border-radius:50%}.mark:before{width:13px;height:27px;left:9px;top:10px;transform:rotate(25deg)}.mark:after{width:13px;height:27px;right:9px;top:10px;transform:rotate(-25deg)}.mark i:before{width:7px;height:20px;left:15px;top:25px}.mark i:after{width:7px;height:20px;right:15px;top:25px}.logo{font-weight:800;font-size:28px;line-height:.9;letter-spacing:.5px;white-space:nowrap}.logo span{display:block;color:#6fc3ed;font-weight:400;letter-spacing:5px;margin-top:8px}
 nav{margin-left:auto;display:flex;align-items:center;gap:clamp(22px,4vw,64px)}nav a{color:#fff;text-decoration:none;font-size:18px;transition:opacity .2s ease,transform .2s ease}nav a:hover{opacity:.78}.platform,.cta{transition:transform .2s ease,filter .2s ease}.platform:hover,.cta:hover{transform:translateY(-2px);filter:brightness(1.04)}a:focus-visible{outline:3px solid #efc978;outline-offset:4px}.platform{background:linear-gradient(135deg,#f6d98f,#eab95f);color:#14202b!important;padding:18px 42px;border-radius:999px;font-weight:700}
 main{min-height:calc(100dvh - 108px);display:grid;grid-template-columns:47% 53%;align-items:center;padding:36px clamp(24px,5vw,80px) 42px;gap:16px}
 .kicker{font-size:16px;letter-spacing:5px;color:#d4dde5;margin:0 0 12px}
@@ -35,20 +35,10 @@ h1{font-size:clamp(33px,9.2vw,46px);line-height:.94;max-width:100%;letter-spacin
 .visual{height:66vw;min-height:245px;margin-top:22px}
 .o1{width:66%;left:10%;top:2%}.o2{width:40%;right:4%;top:17%}.o3{width:22%;right:14%;bottom:3%}
 .x1{width:51%;left:16%;top:10%}.x2{width:25%;right:10%;top:18%}.x3{width:18%;right:19%;bottom:11%}
-.xray:before{background:
-radial-gradient(ellipse at 50% 72%,#eef8ff99 0 3.5%,transparent 4%),
-radial-gradient(ellipse at 42% 70%,#e8f5ff88 0 3.8%,transparent 4.3%),
-radial-gradient(ellipse at 58% 70%,#e8f5ff88 0 3.8%,transparent 4.3%),
-radial-gradient(ellipse at 34% 66%,#dcefff77 0 3.5%,transparent 4%),
-radial-gradient(ellipse at 66% 66%,#dcefff77 0 3.5%,transparent 4%),
-radial-gradient(ellipse at 27% 60%,#cfe9fb66 0 3%,transparent 3.6%),
-radial-gradient(ellipse at 73% 60%,#cfe9fb66 0 3%,transparent 3.6%),
-radial-gradient(ellipse at 50% 50%,transparent 0 25%,#d7efff3d 26% 28%,transparent 29%),
-linear-gradient(90deg,transparent 49%,#efc97855 49.5% 50.5%,transparent 51%),
-radial-gradient(circle at 50% 50%,#0e4569,#061f35 73%)}
+.xray:before{content:"";position:absolute;inset:7%;border-radius:50%;background:radial-gradient(ellipse at 50% 38%,transparent 0 18%,#dff3ff55 19% 21%,transparent 22%),radial-gradient(ellipse at 50% 58%,transparent 0 23%,#dff3ff44 24% 26%,transparent 27%),radial-gradient(ellipse at 50% 72%,#eef8ffaa 0 4%,transparent 5%),radial-gradient(ellipse at 41% 69%,#e8f5ff99 0 4%,transparent 5%),radial-gradient(ellipse at 59% 69%,#e8f5ff99 0 4%,transparent 5%),radial-gradient(ellipse at 32% 64%,#dcefff88 0 3.5%,transparent 4.5%),radial-gradient(ellipse at 68% 64%,#dcefff88 0 3.5%,transparent 4.5%),linear-gradient(90deg,transparent 49%,#efc97844 49.5% 50.5%,transparent 51%),radial-gradient(circle,#0e4569,#061f35 73%);box-shadow:inset 0 0 22px #a8ddff22}
 }
 </style></head><body><div class="page">
-<header><div class="brand"><span class="mark">◯</span><div class="logo">PREMIUM<span>LAUDOS</span></div></div><nav><a href="empresa.html">A Empresa</a><a href="equipe.html">Equipe</a><a href="contato.html">Contato</a><a class="platform" href="https://premium-laudos.onrender.com/" target="_blank" rel="noopener">Plataforma &nbsp;→</a></nav><a class="platform" style="display:none" href="https://premium-laudos.onrender.com/" target="_blank" rel="noopener">Plataforma →</a></header>
+<header><div class="brand"><span class="mark" aria-hidden="true"><i></i></span><div class="logo">PREMIUM<span>LAUDOS</span></div></div><nav><a href="empresa.html">A Empresa</a><a href="equipe.html">Equipe</a><a href="contato.html">Contato</a><a class="platform" href="https://premium-laudos.onrender.com/" target="_blank" rel="noopener">Plataforma &nbsp;→</a></nav><a class="platform" style="display:none" href="https://premium-laudos.onrender.com/" target="_blank" rel="noopener">Plataforma →</a></header>
 <main><section class="copy"><p class="kicker">RADIOLOGIA ODONTOLÓGICA DIGITAL</p><h1>IMAGENS<br>QUE TRANSFORMAM<br><em>DECISÕES.</em></h1><div class="rule"></div><p class="lead">Auxiliando você na tomada de decisão.</p><p class="desc">Laudos especializados para uma odontologia mais segura, precisa e previsível.</p><a class="cta" href="https://premium-laudos.onrender.com/" target="_blank" rel="noopener">ACESSAR PLATAFORMA &nbsp;→</a></section>
 <section class="visual" aria-label="Composição de radiologia odontológica"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="xray x1"></div><div class="xray x2"></div><div class="xray x3"></div><div class="words"><span>DIAGNÓSTICO</span><span>PLANEJAMENTO</span><span>SEGURANÇA</span><span>QUALIDADE</span><span>RESULTADOS</span></div></section></main>
-</div></body></html>
+<footer>© 2026 Premium Laudos Todos os direitos reservados</footer></div></body></html>
