@@ -11,3 +11,31 @@
 /* refinamento final de fidelidade visual */
 @media(min-width:701px){.home-screen header{padding-left:5.2vw;padding-right:14vw}.home-screen nav{gap:4.5vw}.home-copy{padding-left:5.2vw}.home-copy h1{letter-spacing:-1px}.radiology{border-left:1px solid #ffffff12}.servicebar{padding-left:4.8%;padding-right:4.8%}}
 @media(max-width:700px){.home-screen{grid-template-rows:17vh 74vh 9vh!important}.home-screen header{align-content:center!important}.brand{justify-self:start}.home-hero{grid-template-columns:52% 48%!important}.home-copy{padding-left:12px!important}.home-copy h1{font-size:min(8.2vw,34px)!important;letter-spacing:-.6px!important}.home-copy h2{font-family:Georgia,serif!important;font-weight:400!important}.radiology{border-left:1px solid #ffffff12}.exam-board{right:4px!important}.servicebar span{border-right:1px solid #ffffff20!important}.servicebar span:last-child{border-right:0!important}}
+
+/* ajuste de enquadramento: preservar aparência da referência em qualquer tela */
+.home-screen{max-width:1920px;margin:0 auto}
+@media(max-width:700px){
+.home{background:#01192b!important}
+.home-screen{grid-template-rows:15vh 76vh 9vh!important}
+.home-screen header{height:auto!important;grid-template-columns:35% 65%!important;grid-template-rows:1fr!important;padding:0 3vw!important}
+.home-screen .brand{grid-column:1!important;align-self:center!important}
+.home-screen nav{grid-column:2!important;display:grid!important;grid-template-columns:repeat(4,1fr)!important;gap:2px!important}
+.home-screen nav a{border:0!important;border-radius:0!important;padding:8px 1px!important;font-size:7.5px!important}
+.home-screen nav .platform{border-radius:18px!important;background:linear-gradient(90deg,#f6d781,#e8b955)!important;font-size:7.5px!important}
+.home-hero{grid-template-columns:48% 52%!important}
+.home-copy{padding:2vh 0 2vh 4vw!important}
+.home-copy small{font-size:5.5px!important;letter-spacing:1.5px!important}
+.home-copy h1{font-size:7.1vw!important;line-height:.92!important;margin:6px 0!important}
+.home-copy h2{font-size:3.2vw!important;line-height:1.1!important}
+.home-copy p{font-size:2.25vw!important;max-width:45vw!important}
+.home-copy .cta{font-size:2vw!important;padding:8px 9px!important}
+.gold-orbit{width:55vw!important;height:55vw!important;left:-10vw!important}
+.skull{left:-3vw!important;top:8%!important;width:58%!important;height:84%!important}
+.exam-board{right:9%!important;top:11%!important;width:48%!important;height:78%!important}
+.pan{font-size:4px!important}
+.exam-grid i{font-size:3.5px!important}
+.servicebar{grid-template-columns:repeat(6,1fr)!important}
+.servicebar span{font-size:11px!important}
+.servicebar b{font-size:5.5px!important}
+.servicebar small{font-size:4.8px!important}
+}
