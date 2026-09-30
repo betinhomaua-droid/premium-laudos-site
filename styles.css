@@ -44,3 +44,22 @@
 .radiology{background-image:linear-gradient(90deg,#031d32 0%,rgba(3,29,50,.32) 20%,rgba(3,29,50,.02) 58%),url('assets/hero-premium.jpg')!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}
 .radiology>.gold-orbit,.radiology>.skull,.radiology>.exam-board,.radiology>.keywords{display:none!important}
 @media(max-width:700px){.radiology{background-position:center!important;background-size:cover!important}}
+
+/* v49 — responsividade real das páginas internas, baseada na referência aprovada */
+@media(max-width:700px){
+ body.sub{overflow-x:hidden!important;overflow-y:auto!important;min-height:100dvh!important}
+ .subscreen{display:block!important;height:auto!important;min-height:100dvh!important;padding:76px 0 30px!important}
+ .subscreen>div{padding:24px 22px!important}
+ .subscreen>div:first-child{padding-top:18px!important}
+ .subscreen h1{font-size:clamp(30px,9vw,43px)!important;line-height:1.02!important;margin:12px 0 18px!important;overflow-wrap:break-word!important}
+ .subscreen p{font-size:15px!important;line-height:1.5!important;margin:0 0 14px!important}
+ .subscreen small{font-size:10px!important;letter-spacing:3px!important}
+ .subart{display:flex!important;height:220px!important;padding:28px 22px!important;font-size:17px!important}
+ .subart strong{font-size:30px!important}
+ .team{display:flex!important;flex-direction:column!important}
+ .team>.subart{order:2!important}
+ .team>div:not(.subart){order:1!important}
+ .tiles{grid-template-columns:1fr 1fr!important;gap:8px!important;margin-top:18px!important}
+ .tiles b{padding:12px!important;font-size:11px!important;line-height:1.3!important}
+ .back{position:absolute!important;top:14px!important;left:14px!important;z-index:30!important}
+}
