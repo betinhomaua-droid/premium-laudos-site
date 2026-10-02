@@ -82,6 +82,11 @@ h1{font-size:clamp(33px,9.2vw,46px);line-height:.94;max-width:100%;letter-spacin
 .scan-stage>img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center right!important;filter:none!important}
 @media(max-width:800px){.scan-stage>img{object-position:center!important}.words{font-size:10px!important;gap:7px!important}}
 @media(max-width:520px){.words{display:none!important}}
+
+/* v63 — enquadramento responsivo do CBCT em alta resolução */
+@media(min-width:801px){.scan-stage>img{object-fit:contain!important;object-position:center center!important;max-width:100%!important}.visual{overflow:hidden!important}}
+@media(max-width:800px){main{grid-template-columns:1fr!important}.visual{width:100%!important;min-height:260px!important;height:34vh!important;max-height:340px!important}.scan-stage{inset:0!important}.scan-stage>img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important}.words{display:none!important}}
+@media(max-width:520px){.visual{min-height:220px!important;height:29vh!important;max-height:280px!important}.scan-stage>img{object-fit:contain!important}}
 </style></head><body><div class="page">
 <header><a class="brand" href="index.html" aria-label="Premium Laudos"><img src="assets/logo-premium.webp" alt="Premium Laudos"></a><nav><a href="empresa.html">A Empresa</a><a href="equipe.html">Equipe</a><a href="contato.html">Contato</a><a class="platform" href="https://premium-laudos.onrender.com/" target="_blank" rel="noopener">Plataforma &nbsp;→</a></nav></header>
 <main><section class="copy"><p class="kicker">RADIOLOGIA ODONTOLÓGICA DIGITAL</p><h1>IMAGENS<br>QUE TRANSFORMAM<br><em>DECISÕES.</em></h1><div class="rule"></div><p class="lead">Auxiliando você na tomada de decisão.</p><p class="desc">Laudos especializados para uma odontologia mais segura, precisa e previsível.</p></section>
