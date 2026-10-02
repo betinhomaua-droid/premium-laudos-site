@@ -109,3 +109,27 @@
  .radiology-composition>.words{display:none!important}
  .panoramic{height:92px}.exam-grid .exam{height:82px}
 }
+
+/* v70 — aproximação fina do molde aprovado, mantendo peças independentes */
+@media(min-width:801px){
+ main{grid-template-columns:44% 56%!important}
+ .copy{padding-left:5.2vw!important;padding-right:1vw!important;z-index:4}
+ .copy h1{font-size:clamp(58px,5.25vw,92px)!important;line-height:.88!important}
+ .visual{position:relative!important;overflow:visible!important}
+ .radiology-composition{min-height:610px!important}
+ .skull-layer{inset:-2% 25% -3% -9%!important;background-size:cover!important;background-position:27% center!important;mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 90%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 90%,transparent 100%)}
+ .exam-panel{right:6%!important;top:14%!important;width:47%!important;border-radius:5px!important}
+ .radiology-composition>.words{right:-2%!important;top:33%!important;font-size:12px!important;letter-spacing:.4px!important}
+}
+@media(max-width:800px){
+ .copy{padding-bottom:8px!important}
+ .radiology-composition{min-height:430px!important}
+ .skull-layer{inset:-3% 5% 5% -5%!important;background-size:cover!important;background-position:22% center!important;opacity:.92!important}
+ .exam-panel{right:4%!important;top:48%!important;width:64%!important;transform:none!important}
+}
+@media(max-width:520px){
+ .radiology-composition{min-height:390px!important}
+ .skull-layer{inset:0 1% 7% -2%!important;background-size:cover!important;background-position:18% center!important}
+ .exam-panel{top:51%!important;width:68%!important}
+ .panoramic{height:86px!important}.exam-grid .exam{height:76px!important}
+}
