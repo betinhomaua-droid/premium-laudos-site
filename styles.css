@@ -133,3 +133,26 @@
  .exam-panel{top:51%!important;width:68%!important}
  .panoramic{height:86px!important}.exam-grid .exam{height:76px!important}
 }
+
+/* v72 — acabamento editorial da interface aprovada */
+@media(min-width:801px){
+ header{height:108px!important;padding:0 5vw!important;border-bottom:1px solid rgba(122,190,220,.18)!important}
+ .brand img{max-height:92px!important;width:auto!important}
+ nav{gap:34px!important}
+ nav a:not(.platform){font-size:16px!important}
+ nav .platform{padding:15px 30px!important;border-radius:999px!important}
+ .copy{padding-top:48px!important}
+ .copy .kicker{letter-spacing:5px!important;font-size:12px!important}
+ .copy h1 em{color:#e7b85d!important;font-style:normal!important}
+ .copy .rule{width:72px!important;height:4px!important;margin:24px 0!important}
+ .copy .desc{max-width:590px!important;font-size:17px!important;line-height:1.55!important}
+ .exam-panel{backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+}
+@media(max-width:800px){
+ header{border-bottom:1px solid rgba(122,190,220,.18)!important}
+ .copy .kicker{font-size:10px!important;letter-spacing:3px!important}
+ .copy h1{font-size:clamp(42px,11.5vw,64px)!important;line-height:.92!important}
+ .copy h1 em{color:#e7b85d!important;font-style:normal!important}
+ .copy .desc{font-size:15px!important;line-height:1.48!important}
+ .radiology-composition{margin-top:4px!important}
+}
