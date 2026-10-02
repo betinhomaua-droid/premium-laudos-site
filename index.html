@@ -38,7 +38,25 @@ h1{font-size:clamp(33px,9.2vw,46px);line-height:.94;max-width:100%;letter-spacin
 .x1{width:51%;left:16%;top:10%}.x2{width:25%;right:10%;top:18%}.x3{width:18%;right:19%;bottom:11%}
 .xray:before{content:"";position:absolute;inset:7%;border-radius:50%;background:radial-gradient(ellipse at 50% 38%,transparent 0 18%,#dff3ff55 19% 21%,transparent 22%),radial-gradient(ellipse at 50% 58%,transparent 0 23%,#dff3ff44 24% 26%,transparent 27%),radial-gradient(ellipse at 50% 72%,#eef8ffaa 0 4%,transparent 5%),radial-gradient(ellipse at 41% 69%,#e8f5ff99 0 4%,transparent 5%),radial-gradient(ellipse at 59% 69%,#e8f5ff99 0 4%,transparent 5%),radial-gradient(ellipse at 32% 64%,#dcefff88 0 3.5%,transparent 4.5%),radial-gradient(ellipse at 68% 64%,#dcefff88 0 3.5%,transparent 4.5%),linear-gradient(90deg,transparent 49%,#efc97844 49.5% 50.5%,transparent 51%),radial-gradient(circle,#0e4569,#061f35 73%);box-shadow:inset 0 0 22px #a8ddff22}.xray:after{content:"";position:absolute;left:25%;right:25%;bottom:17%;height:22%;border:3px solid #dff3ff55;border-top:0;border-radius:0 0 50% 50%;filter:blur(.2px);opacity:.85}
 }
-@keyframes heroIn{from{opacity:0;transform:translateX(26px) scale(1.02)}to{opacity:.96;transform:none}}@keyframes copyIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}@keyframes glow{0%,100%{box-shadow:0 0 0 rgba(238,190,101,0)}50%{box-shadow:0 0 28px rgba(238,190,101,.18)}}.copy{animation:copyIn .75s ease both}.radiology>img{animation:heroIn 1.25s cubic-bezier(.2,.75,.25,1) both}.cta,.platform{animation:glow 3.4s ease-in-out infinite}@media(prefers-reduced-motion:reduce){.copy,.radiology>img,.cta,.platform{animation:none!important}}@media(max-width:800px){body{overflow-x:hidden}.hero{min-height:auto}.copy{padding-top:22px}.radiology{display:block!important;height:310px!important;min-height:310px!important;margin-top:12px!important}.scan-stage{inset:0!important}.gold-orbit{width:88%!important;left:6%!important;top:2%!important}.words{display:none!important}.page>footer{font-size:11px;padding:12px 14px}} </style></head><body><div class="page">
+@keyframes heroIn{from{opacity:0;transform:translateX(26px) scale(1.02)}to{opacity:.96;transform:none}}@keyframes copyIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}@keyframes glow{0%,100%{box-shadow:0 0 0 rgba(238,190,101,0)}50%{box-shadow:0 0 28px rgba(238,190,101,.18)}}.copy{animation:copyIn .75s ease both}.radiology>img{animation:heroIn 1.25s cubic-bezier(.2,.75,.25,1) both}.cta,.platform{animation:glow 3.4s ease-in-out infinite}@media(prefers-reduced-motion:reduce){.copy,.radiology>img,.cta,.platform{animation:none!important}}@media(max-width:800px){body{overflow-x:hidden}.hero{min-height:auto}.copy{padding-top:22px}.radiology{display:block!important;height:310px!important;min-height:310px!important;margin-top:12px!important}.scan-stage{inset:0!important}.gold-orbit{width:88%!important;left:6%!important;top:2%!important}.words{display:none!important}.page>footer{font-size:11px;padding:12px 14px}} 
+/* v55 — composição final do hero radiológico */
+.scan-stage{inset:3% 1% 4% 0;border-radius:0;background:transparent;overflow:visible}
+.scan-stage>img{object-fit:contain;object-position:center right;filter:contrast(1.08) brightness(.96);border-radius:18px}
+.gold-orbit{width:82%;left:2%;top:3%;opacity:.72;pointer-events:none}
+.scan-line{height:72%;top:14%;opacity:.45}
+@media(max-width:800px){
+ main{gap:6px}
+ .radiology{height:285px!important;min-height:285px!important}
+ .scan-stage{inset:0!important}
+ .scan-stage>img{object-fit:contain!important;object-position:center!important;max-width:100%}
+ .gold-orbit{width:78%!important;left:8%!important;top:3%!important}
+ .scan-line{height:70%;top:15%}
+}
+@media(max-width:520px){
+ .radiology{height:255px!important;min-height:255px!important;margin-top:6px!important}
+ .scan-stage>img{border-radius:12px}
+}
+</style></head><body><div class="page">
 <header><a class="brand" href="index.html" aria-label="Premium Laudos"><img src="assets/logo-premium.webp" alt="Premium Laudos"></a><nav><a href="empresa.html">A Empresa</a><a href="equipe.html">Equipe</a><a href="contato.html">Contato</a><a class="platform" href="https://premium-laudos.onrender.com/" target="_blank" rel="noopener">Plataforma &nbsp;→</a></nav><a class="platform" style="display:none" href="https://premium-laudos.onrender.com/" target="_blank" rel="noopener">Plataforma →</a></header>
 <main><section class="copy"><p class="kicker">RADIOLOGIA ODONTOLÓGICA DIGITAL</p><h1>IMAGENS<br>QUE TRANSFORMAM<br><em>DECISÕES.</em></h1><div class="rule"></div><p class="lead">Auxiliando você na tomada de decisão.</p><p class="desc">Laudos especializados para uma odontologia mais segura, precisa e previsível.</p></section>
 <section class="visual clean-visual" aria-label="Radiologia odontológica"><div class="scan-stage" aria-hidden="true"><img src="https://media.canva.com/v2/image-resize/format:JPG/height:430/quality:90/uri:ifs%3A%2F%2FM%2Fe4000b86-66ad-46e8-8f56-3ac93480d3e5/width:519" alt=""><div class="scan-line"></div></div><div class="gold-orbit"></div><div class="words"><span>DIAGNÓSTICO</span><span>PLANEJAMENTO</span><span>SEGURANÇA</span><span>QUALIDADE</span><span>RESULTADOS</span></div></section></main>
