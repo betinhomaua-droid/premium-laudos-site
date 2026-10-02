@@ -68,3 +68,26 @@
 .scan-stage{padding:10px!important;box-sizing:border-box!important}
 .scan-stage>img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;transform:none!important;scale:1!important}
 @media(max-width:800px){.scan-stage{padding:6px!important}.scan-stage>img{object-fit:contain!important;transform:none!important}}
+
+/* v67 — mobile baseado na composição aprovada: imagem integrada e plataforma visível */
+@media(max-width:800px){
+ header{display:flex!important;flex-wrap:wrap!important;align-items:center!important;justify-content:center!important;padding:16px 18px 12px!important;gap:10px 14px!important}
+ .brand{width:100%!important;display:flex!important;justify-content:center!important}
+ .brand img{max-width:270px!important;width:72vw!important;height:auto!important}
+ nav{width:100%!important;display:flex!important;justify-content:center!important;align-items:center!important;gap:9px!important;flex-wrap:wrap!important}
+ nav a{font-size:14px!important}
+ nav .platform{display:inline-flex!important;padding:9px 15px!important;font-size:12px!important;white-space:nowrap!important}
+ main{display:block!important}
+ .copy{padding:40px 5.5vw 22px!important}
+ .visual{height:auto!important;min-height:0!important;max-height:none!important;padding:0 5.5vw 36px!important;display:block!important}
+ .scan-stage{position:relative!important;inset:auto!important;width:100%!important;height:auto!important;padding:0!important;border-radius:14px!important;overflow:hidden!important}
+ .scan-stage>img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center!important;transform:none!important}
+}
+@media(max-width:520px){
+ .copy h1{font-size:clamp(47px,13vw,70px)!important;line-height:.88!important}
+ .copy .lead{font-size:clamp(24px,7vw,34px)!important}
+ nav{gap:7px!important}
+ nav a{font-size:13px!important}
+ nav .platform{padding:8px 13px!important}
+ .visual{padding-top:8px!important}
+}
