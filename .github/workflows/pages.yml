@@ -18,6 +18,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Prepare radiology hero asset
+        run: |
+          mkdir -p assets
+          curl -L --fail --retry 3 'https://media.canva.com/v2/image-resize/format:JPG/height:165/quality:75/uri:ifs%3A%2F%2FM%2Fb471bd87-8741-426f-a985-e931d6a40a2c/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAFrIgcdZTrr3KtRuRWBfZLtsnIZXY_sv0qBhPKzrBXdq&exp=1790959282&osig=AAAAAAAAAAAAAAAAAAAAABuXTcVx-0yGatI-YRpHyf51lPdYOZTJP8_IIdw1n3uQ&signer=media-rpc&token=AAIAAU0AJGI0NzFiZDg3LTg3NDEtNDI2Zi1hOTg1LWU5MzFkNmE0MGEyYwAAAAABoP1951CAjebG5F8DWaIAKOOQ4d2AZ-xVDvK8Oftc9n7w-KxoFQ&x-canva-quality=thumbnail' -o assets/radiologia-hero.jpg
+          test -s assets/radiologia-hero.jpg
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
