@@ -21,7 +21,7 @@ jobs:
       - name: Prepare radiology hero asset
         run: |
           mkdir -p assets
-          curl -L --fail --retry 3 'https://upload.wikimedia.org/wikipedia/commons/8/8b/CBCT_image_03.png' -o assets/radiologia-hero.png
+          curl -L --fail --retry 3 'https://betinhomaua-droid.github.io/premium-laudos-site/assets/radiologia-hero.png' -o assets/radiologia-hero.png
           test -s assets/radiologia-hero.png
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
