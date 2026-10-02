@@ -63,3 +63,8 @@
  .tiles b{padding:12px!important;font-size:11px!important;line-height:1.3!important}
  .back{position:absolute!important;top:14px!important;left:14px!important;z-index:30!important}
 }
+
+/* v66 — CBCT realista, sem zoom/corte que amplie dentes */
+.scan-stage{padding:10px!important;box-sizing:border-box!important}
+.scan-stage>img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;transform:none!important;scale:1!important}
+@media(max-width:800px){.scan-stage{padding:6px!important}.scan-stage>img{object-fit:contain!important;transform:none!important}}
