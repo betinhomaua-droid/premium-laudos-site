@@ -200,3 +200,22 @@ footer{position:relative!important;z-index:8!important}
 .skull-layer>img{filter:contrast(1.14) brightness(.88) saturate(.7)!important}
 .exam>img{filter:contrast(1.12) brightness(.92) saturate(.72)!important}
 @media(min-width:1100px){.radiology-composition:before{inset:1% -1% 0 -7%!important}.radiology-composition:after{inset:3% .5% 2% -5%!important}}
+
+/* v77 — responsividade do portal e hierarquia visual */
+@media(max-width:800px){
+ main{display:block!important}
+ .copy{padding:34px 22px 8px!important}
+ .visual{min-height:430px!important;padding:0 10px 18px!important}
+ .radiology-composition{width:100%!important;min-height:410px!important}
+ .radiology-composition:before{inset:1% 0 2% 0!important}
+ .radiology-composition:after{inset:3% 2% 4% 2%!important}
+ .skull-layer{inset:1% 5% 4% -5%!important}
+ .exam-panel{right:4%!important;top:49%!important;width:66%!important}
+}
+@media(max-width:520px){
+ .copy h1{font-size:clamp(39px,11vw,52px)!important}
+ .visual{min-height:385px!important}
+ .radiology-composition{min-height:370px!important}
+ .exam-panel{top:50%!important;width:70%!important}
+ .panoramic{height:82px!important}.exam-grid .exam{height:70px!important}
+}
