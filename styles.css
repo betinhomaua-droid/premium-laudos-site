@@ -219,3 +219,11 @@ footer{position:relative!important;z-index:8!important}
  .exam-panel{top:50%!important;width:70%!important}
  .panoramic{height:82px!important}.exam-grid .exam{height:70px!important}
 }
+
+/* v78 — portal oficial; sem dependência do CBCT antigo */
+.reference-portal{position:relative;width:100%;height:100%;min-height:620px;border-radius:50%;border:3px solid rgba(64,174,235,.7);box-shadow:0 0 36px rgba(43,162,228,.28);overflow:hidden;background:radial-gradient(circle at 45% 50%,#0b466b 0,#062b47 48%,#021b30 74%)}
+.reference-portal:after{content:"";position:absolute;inset:2%;border:3px solid rgba(235,183,83,.78);border-left-color:transparent;border-bottom-color:rgba(235,183,83,.28);border-radius:50%;transform:rotate(-7deg);pointer-events:none}
+.reference-skull{position:absolute;left:2%;top:8%;width:55%;height:84%;background:radial-gradient(ellipse at 45% 45%,rgba(197,231,250,.22),transparent 58%);border-radius:48%}
+.reference-pano{position:absolute;right:7%;top:20%;width:43%;height:27%;border:1px solid rgba(200,235,250,.35);background:linear-gradient(180deg,rgba(207,235,248,.15),rgba(1,13,24,.65))}
+.reference-cuts{position:absolute;right:7%;top:49%;width:43%;height:34%;border:1px solid rgba(200,235,250,.28);background:repeating-linear-gradient(90deg,rgba(190,226,244,.09) 0 19%,rgba(1,15,26,.7) 19% 20%)}
+@media(max-width:800px){.reference-portal{min-height:390px}.reference-skull{width:62%}.reference-pano,.reference-cuts{right:4%;width:46%}}
