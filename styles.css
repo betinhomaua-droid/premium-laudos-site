@@ -171,3 +171,15 @@
  .exam-grid .exam{height:158px!important}
 }
 footer{position:relative!important;z-index:8!important}
+
+/* v74 — moldura circular azul/dourada envolvendo a composição radiológica */
+.radiology-composition:before,
+.radiology-composition:after{content:"";position:absolute;pointer-events:none;z-index:6;border-radius:50%}
+.radiology-composition:before{inset:3% 0 1% -4%;border:2px solid rgba(63,174,235,.58);box-shadow:0 0 28px rgba(34,153,224,.22),inset 0 0 22px rgba(34,153,224,.10)}
+.radiology-composition:after{inset:5% 1.5% 2.5% -2.5%;border:2px solid rgba(235,183,83,.82);border-left-color:rgba(235,183,83,.22);box-shadow:14px -7px 22px rgba(235,183,83,.16)}
+.skull-layer,.exam-panel{z-index:2}
+.radiology-composition>.words{z-index:7}
+@media(max-width:800px){
+ .radiology-composition:before{inset:2% 1% 2% 1%}
+ .radiology-composition:after{inset:4% 2.5% 4% 2.5%}
+}
