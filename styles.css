@@ -129,3 +129,18 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
   mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 0%,#000 91%,rgba(0,0,0,.92) 95%,transparent 100%);
   filter:contrast(1.03) saturate(1.02) drop-shadow(0 0 18px rgba(29,139,211,.16));
 }
+
+/* Portal final usando arte completa radio.png - v95 */
+.portal:before,.portal:after{display:none!important}
+.portal{border-radius:0!important;overflow:visible!important;background:transparent!important}
+.portal img{
+  width:100%!important;
+  height:100%!important;
+  margin:0!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  border-radius:0!important;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+  filter:drop-shadow(0 0 22px rgba(29,139,211,.16))!important;
+}
