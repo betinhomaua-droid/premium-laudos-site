@@ -47,3 +47,8 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
 @media(max-width:650px){
   .tooth-video{width:47px;height:47px;transform:scale(.82)}
 }
+
+/* Teste sem esfumaçado no dente - v91 */
+.tooth-video-wrap{box-shadow:none!important;background:#031a2c!important}
+.tooth-video-wrap:after{display:none!important}
+.tooth-video{-webkit-mask-image:none!important;mask-image:none!important;mix-blend-mode:screen}
