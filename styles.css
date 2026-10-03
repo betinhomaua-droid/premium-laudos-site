@@ -23,3 +23,16 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
 .brand-name b{font-size:29px;letter-spacing:3.6px}
 @media(max-width:1000px){.brand-video{width:245px;height:78px;gap:6px}.tooth-video-wrap{width:68px;height:68px;flex-basis:68px;border-radius:15px}.tooth-video{width:78px;height:78px}.brand-name strong{font-size:21px}.brand-name b{font-size:24px}}
 @media(max-width:650px){.brand-video{width:184px;height:62px;gap:4px}.tooth-video-wrap{width:52px;height:52px;flex-basis:52px;border-radius:12px}.tooth-video{width:60px;height:60px}.brand-name strong{font-size:15px}.brand-name b{font-size:18px;letter-spacing:1.8px}}
+
+/* Ajuste fino de enquadramento e viewport - v89 */
+@media(min-width:1001px){
+  header{height:96px;padding-top:7px;padding-bottom:7px}
+  main{min-height:calc(100vh - 138px);height:calc(100vh - 138px)}
+  .copy{padding-top:9.2vh;padding-bottom:2vh}
+  .copy h1{font-size:clamp(52px,4.05vw,72px)}
+  .visual{padding-bottom:0}
+  .portal{width:min(54.5vw,930px)}
+  .tooth-video{width:82px;height:82px;transform:scale(.94)}
+  .tooth-video-wrap{width:78px;height:78px;flex-basis:78px}
+  footer{min-height:42px}
+}
