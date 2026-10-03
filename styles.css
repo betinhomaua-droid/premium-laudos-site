@@ -36,3 +36,14 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
   .tooth-video-wrap{width:78px;height:78px;flex-basis:78px}
   footer{min-height:42px}
 }
+
+/* Ajuste exclusivo do dente MP4 - v90 */
+@media(min-width:1001px){
+  .tooth-video{width:72px;height:72px;transform:scale(.82)}
+}
+@media(max-width:1000px) and (min-width:651px){
+  .tooth-video{width:62px;height:62px;transform:scale(.82)}
+}
+@media(max-width:650px){
+  .tooth-video{width:47px;height:47px;transform:scale(.82)}
+}
