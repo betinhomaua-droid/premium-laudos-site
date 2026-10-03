@@ -84,3 +84,48 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
 @media(max-width:650px){
   .tooth-video{width:43px;height:43px;transform:scale(.76)}
 }
+
+/* Portal radiológico inspirado na referência aprovada - v94 */
+.portal{
+  position:relative;
+  isolation:isolate;
+  border-radius:50%;
+  overflow:visible;
+}
+.portal:before{
+  content:"";
+  position:absolute;
+  inset:1.8% 1.2%;
+  border-radius:50%;
+  z-index:0;
+  background:
+    conic-gradient(from 205deg,
+      rgba(20,142,220,.92) 0deg,
+      rgba(45,167,232,.68) 70deg,
+      rgba(239,187,76,.96) 145deg,
+      rgba(255,218,125,.98) 205deg,
+      rgba(25,144,218,.88) 282deg,
+      rgba(20,126,202,.82) 360deg);
+  filter:drop-shadow(0 0 12px rgba(31,146,218,.38)) drop-shadow(0 0 7px rgba(239,185,70,.24));
+}
+.portal:after{
+  content:"";
+  position:absolute;
+  inset:2.55% 2%;
+  border-radius:50%;
+  z-index:1;
+  background:#031a2c;
+}
+.portal img{
+  position:relative;
+  z-index:2;
+  width:95%;
+  height:94%;
+  margin:auto;
+  object-fit:cover;
+  object-position:center;
+  border-radius:50%;
+  -webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 0%,#000 91%,rgba(0,0,0,.92) 95%,transparent 100%);
+  mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 0%,#000 91%,rgba(0,0,0,.92) 95%,transparent 100%);
+  filter:contrast(1.03) saturate(1.02) drop-shadow(0 0 18px rgba(29,139,211,.16));
+}
