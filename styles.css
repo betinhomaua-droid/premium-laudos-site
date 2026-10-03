@@ -52,3 +52,35 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
 .tooth-video-wrap{box-shadow:none!important;background:#031a2c!important}
 .tooth-video-wrap:after{display:none!important}
 .tooth-video{-webkit-mask-image:none!important;mask-image:none!important;mix-blend-mode:screen}
+
+/* Logo final: dente menor + bordas fumaceadas, rotação preservada - v92 */
+.tooth-video-wrap{
+  position:relative;
+  overflow:hidden;
+  background:#031a2c!important;
+  box-shadow:none!important;
+}
+.tooth-video-wrap:after{
+  content:""!important;
+  display:block!important;
+  position:absolute;
+  inset:-2px;
+  pointer-events:none;
+  border-radius:20px;
+  background:radial-gradient(ellipse at center,transparent 43%,rgba(3,26,44,.12) 58%,rgba(3,26,44,.48) 76%,#031a2c 96%);
+}
+.tooth-video{
+  mix-blend-mode:screen;
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 0%,#000 52%,rgba(0,0,0,.96) 62%,rgba(0,0,0,.72) 75%,rgba(0,0,0,.28) 88%,transparent 100%)!important;
+  mask-image:radial-gradient(ellipse at center,#000 0%,#000 52%,rgba(0,0,0,.96) 62%,rgba(0,0,0,.72) 75%,rgba(0,0,0,.28) 88%,transparent 100%)!important;
+}
+@media(min-width:1001px){
+  .tooth-video-wrap{width:78px;height:78px;flex-basis:78px}
+  .tooth-video{width:66px;height:66px;transform:scale(.76)}
+}
+@media(max-width:1000px) and (min-width:651px){
+  .tooth-video{width:57px;height:57px;transform:scale(.76)}
+}
+@media(max-width:650px){
+  .tooth-video{width:43px;height:43px;transform:scale(.76)}
+}
