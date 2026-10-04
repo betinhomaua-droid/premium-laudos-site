@@ -255,3 +255,36 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
     filter:drop-shadow(0 0 24px rgba(29,139,211,.18))!important;
   }
 }
+
+
+/* v101 — SOMENTE A Empresa: dissolve a borda esquerda da arte no fundo */
+@media(min-width:1001px){
+  .empresa-page .inner-visual{
+    position:relative!important;
+    overflow:visible!important;
+    isolation:isolate;
+  }
+  .empresa-page .inner-visual img{
+    -webkit-mask-image:
+      linear-gradient(90deg,transparent 0%,rgba(0,0,0,.08) 3%,rgba(0,0,0,.28) 7%,rgba(0,0,0,.62) 12%,rgba(0,0,0,.90) 17%,#000 23%,#000 100%)!important;
+    mask-image:
+      linear-gradient(90deg,transparent 0%,rgba(0,0,0,.08) 3%,rgba(0,0,0,.28) 7%,rgba(0,0,0,.62) 12%,rgba(0,0,0,.90) 17%,#000 23%,#000 100%)!important;
+    filter:drop-shadow(0 0 20px rgba(29,139,211,.14))!important;
+  }
+  .empresa-page .inner-visual:after{
+    content:"";
+    position:absolute;
+    z-index:5;
+    pointer-events:none;
+    left:-1px;
+    top:0;
+    bottom:0;
+    width:17%;
+    background:linear-gradient(90deg,
+      rgba(3,26,44,1) 0%,
+      rgba(3,26,44,.92) 18%,
+      rgba(3,26,44,.62) 44%,
+      rgba(3,26,44,.24) 72%,
+      transparent 100%);
+  }
+}
