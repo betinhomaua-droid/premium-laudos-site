@@ -288,3 +288,31 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
       transparent 100%);
   }
 }
+
+
+/* v102 — A Empresa: acabamento do portal igual à Home */
+@media(min-width:1001px){
+  .empresa-page .inner-main{
+    grid-template-columns:42% 58%!important;
+  }
+  .empresa-page .inner-visual{
+    position:relative!important;
+    overflow:visible!important;
+    isolation:isolate!important;
+    padding:0 .6vw 1vh 0!important;
+  }
+  .empresa-page .inner-visual:before,
+  .empresa-page .inner-visual:after{
+    display:none!important;
+  }
+  .empresa-page .inner-visual img{
+    width:min(54.5vw,930px)!important;
+    height:auto!important;
+    max-width:none!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    -webkit-mask-image:radial-gradient(ellipse 49% 48% at 50% 50%,#000 0%,#000 82%,rgba(0,0,0,.98) 86%,rgba(0,0,0,.88) 90%,rgba(0,0,0,.55) 94%,rgba(0,0,0,.18) 97%,transparent 100%)!important;
+    mask-image:radial-gradient(ellipse 49% 48% at 50% 50%,#000 0%,#000 82%,rgba(0,0,0,.98) 86%,rgba(0,0,0,.88) 90%,rgba(0,0,0,.55) 94%,rgba(0,0,0,.18) 97%,transparent 100%)!important;
+    filter:drop-shadow(0 0 20px rgba(29,139,211,.18))!important;
+  }
+}
