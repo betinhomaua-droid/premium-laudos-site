@@ -226,3 +226,32 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
     filter:drop-shadow(0 0 12px rgba(29,139,211,.10))!important;
   }
 }
+
+
+/* v100 — páginas internas: composição visual alinhada à Home */
+@media(min-width:1001px){
+  .inner-main{
+    grid-template-columns:42% 58%!important;
+    background:radial-gradient(circle at 72% 46%,#0a3553 0,#041e32 38%,#021729 72%)!important;
+  }
+  .inner-copy{
+    padding-left:2.75vw!important;
+    padding-right:1.5vw!important;
+  }
+  .inner-visual{
+    overflow:visible!important;
+    padding:0 .6vw 1vh 0!important;
+    justify-content:flex-end!important;
+  }
+  .inner-visual:before{display:none!important}
+  .inner-visual img{
+    width:min(58vw,1000px)!important;
+    height:auto!important;
+    max-width:none!important;
+    object-fit:contain!important;
+    object-position:center!important;
+    -webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 0%,#000 91%,rgba(0,0,0,.92) 94%,rgba(0,0,0,.62) 96.5%,rgba(0,0,0,.22) 98.5%,transparent 100%)!important;
+    mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 0%,#000 91%,rgba(0,0,0,.92) 94%,rgba(0,0,0,.62) 96.5%,rgba(0,0,0,.22) 98.5%,transparent 100%)!important;
+    filter:drop-shadow(0 0 24px rgba(29,139,211,.18))!important;
+  }
+}
