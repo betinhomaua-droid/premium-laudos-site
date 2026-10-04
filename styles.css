@@ -189,3 +189,40 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
     filter:drop-shadow(0 0 14px rgba(29,139,211,.12));
   }
 }
+
+
+/* Refinamento interno v99: arco suave + navegação igual à Home */
+@media(min-width:1001px){
+  .inner-page header{position:relative;z-index:50}
+  .inner-page header nav{
+    display:flex!important;
+    visibility:visible!important;
+    opacity:1!important;
+    align-items:center!important;
+    gap:58px!important;
+    position:relative;
+    z-index:60;
+  }
+  .inner-page header nav>a:not(.platform){display:inline-block!important;visibility:visible!important;opacity:1!important}
+  .inner-visual{position:relative;isolation:isolate}
+  .inner-visual:before{
+    content:"";
+    position:absolute;
+    z-index:4;
+    left:-2px;
+    top:0;
+    bottom:0;
+    width:86px;
+    pointer-events:none;
+    background:linear-gradient(90deg,#031a2c 0%,rgba(3,26,44,.96) 18%,rgba(3,26,44,.72) 42%,rgba(3,26,44,.30) 70%,transparent 100%);
+  }
+  .inner-visual img{
+    width:100%!important;
+    height:100%!important;
+    object-fit:contain!important;
+    object-position:right center!important;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.28) 2%,rgba(0,0,0,.76) 5%,#000 9%,#000 100%)!important;
+    mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.28) 2%,rgba(0,0,0,.76) 5%,#000 9%,#000 100%)!important;
+    filter:drop-shadow(0 0 12px rgba(29,139,211,.10))!important;
+  }
+}
