@@ -156,3 +156,20 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
   mask-image:radial-gradient(ellipse 49% 48% at 50% 50%,#000 0%,#000 82%,rgba(0,0,0,.98) 86%,rgba(0,0,0,.88) 90%,rgba(0,0,0,.55) 94%,rgba(0,0,0,.18) 97%,transparent 100%)!important;
   filter:drop-shadow(0 0 20px rgba(29,139,211,.18))!important;
 }
+
+
+/* Páginas internas baseadas na Home - v97 */
+.inner-page{height:100vh;min-height:560px;overflow:hidden;display:grid;grid-template-rows:96px minmax(0,1fr) 42px;background:radial-gradient(circle at 72% 46%,#0a3553 0,#041e32 38%,#021729 72%)}
+.inner-page header{height:96px}
+.inner-main{min-height:0;height:auto;display:grid;grid-template-columns:34% 66%;overflow:hidden}
+.inner-copy{position:relative;z-index:3;padding:clamp(34px,6vh,70px) 2vw 24px 4.2vw;align-self:center}
+.inner-rule{width:58px;height:5px;background:linear-gradient(90deg,#f7d47b,#e9aa31);margin:0 0 18px}
+.inner-copy h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(48px,5vw,82px);line-height:.95;letter-spacing:-1px;margin:0 0 24px;color:#f0bd59;font-weight:500;white-space:nowrap}
+.inner-copy h1 span{color:#fff}
+.inner-copy p{font-size:clamp(17px,1.45vw,24px);line-height:1.48;margin:0;max-width:540px;color:#fff}
+.inner-copy p strong{color:#f0bd59;font-weight:600}
+.inner-visual{min-width:0;min-height:0;height:100%;display:flex;align-items:center;justify-content:flex-end;overflow:hidden}
+.inner-visual img{display:block;width:100%;height:100%;object-fit:contain;object-position:right center;filter:drop-shadow(0 0 18px rgba(29,139,211,.10))}
+.inner-page footer{height:42px;min-height:42px}
+@media(max-width:1000px){.inner-page{height:auto;min-height:100vh;overflow-x:hidden;overflow-y:auto;display:block}.inner-page header{height:auto}.inner-main{display:grid;grid-template-columns:1fr;height:auto;overflow:visible}.inner-copy{padding:38px 24px 24px}.inner-copy h1{font-size:clamp(44px,10vw,68px)}.inner-copy p{max-width:760px}.inner-visual{height:auto;min-height:0;padding:0 10px 24px}.inner-visual img{width:100%;height:auto;max-height:62vh;object-fit:contain;object-position:center}.inner-page footer{height:auto;min-height:42px}}
+@media(max-width:650px){.inner-copy{padding:30px 20px 20px}.inner-rule{width:46px;height:4px;margin-bottom:14px}.inner-copy h1{font-size:clamp(40px,12vw,56px);margin-bottom:18px}.inner-copy p{font-size:16px;line-height:1.45}.inner-visual{padding:0 6px 18px}}
