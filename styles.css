@@ -173,3 +173,19 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
 .inner-page footer{height:42px;min-height:42px}
 @media(max-width:1000px){.inner-page{height:auto;min-height:100vh;overflow-x:hidden;overflow-y:auto;display:block}.inner-page header{height:auto}.inner-main{display:grid;grid-template-columns:1fr;height:auto;overflow:visible}.inner-copy{padding:38px 24px 24px}.inner-copy h1{font-size:clamp(44px,10vw,68px)}.inner-copy p{max-width:760px}.inner-visual{height:auto;min-height:0;padding:0 10px 24px}.inner-visual img{width:100%;height:auto;max-height:62vh;object-fit:contain;object-position:center}.inner-page footer{height:auto;min-height:42px}}
 @media(max-width:650px){.inner-copy{padding:30px 20px 20px}.inner-rule{width:46px;height:4px;margin-bottom:14px}.inner-copy h1{font-size:clamp(40px,12vw,56px);margin-bottom:18px}.inner-copy p{font-size:16px;line-height:1.45}.inner-visual{padding:0 6px 18px}}
+
+
+/* Correções páginas internas - v98: menu completo + suavização do arco */
+@media(min-width:1001px){
+  .inner-page header nav{display:flex;align-items:center;gap:58px}
+  .inner-visual{position:relative}
+  .inner-visual img{
+    width:99.2%;
+    height:99.2%;
+    object-fit:contain;
+    object-position:right center;
+    -webkit-mask-image:radial-gradient(ellipse 63% 68% at 58% 50%,#000 0%,#000 90%,rgba(0,0,0,.96) 93%,rgba(0,0,0,.72) 96%,rgba(0,0,0,.25) 98.5%,transparent 100%);
+    mask-image:radial-gradient(ellipse 63% 68% at 58% 50%,#000 0%,#000 90%,rgba(0,0,0,.96) 93%,rgba(0,0,0,.72) 96%,rgba(0,0,0,.25) 98.5%,transparent 100%);
+    filter:drop-shadow(0 0 14px rgba(29,139,211,.12));
+  }
+}
