@@ -316,3 +316,13 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
     filter:drop-shadow(0 0 20px rgba(29,139,211,.18))!important;
   }
 }
+
+
+/* v103 — conversão institucional sem telefone publicado */
+.home-actions{margin-top:26px}
+.contact-cta{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;color:#071829;background:linear-gradient(135deg,#f7d47b,#e9aa31);font-weight:700;padding:14px 24px;border-radius:32px;box-shadow:0 0 24px rgba(238,183,67,.16)}
+.contact-cta:hover{filter:brightness(1.04)}
+.contact-status{margin:24px 0 18px;padding:16px 18px;border:1px solid rgba(255,255,255,.16);border-radius:14px;background:rgba(255,255,255,.045);max-width:390px;display:flex;flex-direction:column;gap:5px}
+.contact-status strong{color:#f0bd59;font-size:17px}
+.contact-status span{color:rgba(255,255,255,.78);font-size:14px}
+@media(max-width:650px){.home-actions{margin-top:20px}.contact-cta{padding:12px 18px;font-size:14px}.contact-status{margin-top:20px}}
