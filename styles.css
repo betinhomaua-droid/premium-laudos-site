@@ -357,3 +357,24 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
  header nav a{font-size:12px}
  .copy .desc,.inner-copy p{text-align:left}
 }
+
+/* v106: correção pontual da separação das arcadas no monitor da página Empresa.
+   Sobreposição escura estreita, sem editar o arquivo assets/empresa.png. */
+@media(min-width:1001px){
+ .empresa-page .inner-visual:after{
+   content:""!important;
+   display:block!important;
+   position:absolute!important;
+   z-index:6!important;
+   left:63.5%!important;
+   top:61.2%!important;
+   width:5.8%!important;
+   height:0.48%!important;
+   min-height:3px;
+   background:#08131d!important;
+   border-radius:55% 45% 50% 50%!important;
+   transform:rotate(-2deg);
+   box-shadow:0 0 2px 1px rgba(4,13,22,.8)!important;
+   pointer-events:none!important;
+ }
+}
