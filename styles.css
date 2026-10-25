@@ -326,3 +326,20 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
 .contact-status strong{color:#f0bd59;font-size:17px}
 .contact-status span{color:rgba(255,255,255,.78);font-size:14px}
 @media(max-width:650px){.home-actions{margin-top:20px}.contact-cta{padding:12px 18px;font-size:14px}.contact-status{margin-top:20px}}
+
+/* v104: esferas internas com a mesma escala visual da esfera principal */
+@media(min-width:1001px){
+ .inner-visual{align-items:center!important;justify-content:flex-end!important;padding:0 .6vw 0 0!important}
+ .inner-visual img,.empresa-page .inner-visual img{
+  width:min(54.5vw,930px)!important;
+  height:auto!important;
+  max-height:calc(100vh - 138px)!important;
+  max-width:100%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+ }
+ .inner-copy p{font-size:clamp(17px,1.25vw,21px);line-height:1.48}
+}
+@media(max-width:1000px){
+ .inner-visual img{width:min(98vw,900px)!important;max-height:65vh!important;margin:auto}
+}
