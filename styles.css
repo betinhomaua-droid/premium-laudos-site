@@ -343,3 +343,17 @@ footer{min-height:42px;display:flex;align-items:center;justify-content:center;pa
 @media(max-width:1000px){
  .inner-visual img{width:min(98vw,900px)!important;max-height:65vh!important;margin:auto}
 }
+
+/* v105: menu Home e parágrafos justificados nas quatro páginas */
+.copy .desc,.inner-copy p{text-align:justify;text-justify:inter-word;hyphens:auto}
+@media(min-width:1001px){
+ header nav,.inner-page header nav{gap:clamp(18px,2.5vw,42px)!important}
+ header nav a,.inner-page header nav a{font-size:clamp(14px,1vw,17px)}
+}
+@media(max-width:650px){
+ header nav a:not(.platform){display:inline-block}
+ header{flex-wrap:wrap}
+ header nav{width:100%;justify-content:center;gap:12px}
+ header nav a{font-size:12px}
+ .copy .desc,.inner-copy p{text-align:left}
+}
